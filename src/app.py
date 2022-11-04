@@ -1,4 +1,4 @@
-import tensorflow.compat.v1 as tf
+import tensorflow as tf
 import numpy as np
 import random 
 from threading import Timer
