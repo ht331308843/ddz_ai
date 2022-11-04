@@ -15,6 +15,7 @@ App = Flask(__name__)
 
 def play(observation):
 	re = [0]
+	tf.reset_default_graph()
 	with tf.Session() as sess:
 		saver=tf.train.import_meta_graph(__path__+".meta")
 		saver.restore(sess, __path__)
