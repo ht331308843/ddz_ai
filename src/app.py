@@ -30,7 +30,7 @@ def play(observation):
 	i = 1
 	tempi = 0
 	while i < re.__len__():
-		if(float(re[i]) * float(re[i]) < float(re[tempi]) * float(re[tempi])) :
+		if(float(re[i]) * float(re[i]) > float(re[tempi]) * float(re[tempi])) :
 			tempi = i
 		i+=1
 	# print('in ddz play prediction', observation['actions'],re,tempi)
